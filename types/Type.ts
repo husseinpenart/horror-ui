@@ -19,7 +19,9 @@ export default interface TextViewProps {
     fs: number
     fF: string
     fW: string | number
-    txp: string
+    txp: string,
+    numLine: number
+    cl: string
 }
 
 export default interface ImageViewProps {
@@ -30,6 +32,71 @@ export default interface ImageViewProps {
     style: any | {},
     alignSelf: string,
     borderRadius: number,
-    resizeMode: string
 }
+export default interface HeadingProps {
+    children: React.ReactNode,
+    style: any
+    fs: number
+    fF: string
+    fW: string | number
+    txp: string,
+    cl: string
 
+}
+export default interface BorderButton {
+    children: React.ReactNode,
+    style: any
+    bc: string
+    bw: number
+    bg: string,
+    align: string,
+    br: number,
+    Pressing: any
+
+}
+export default interface divider {
+    style: any
+    wSize: number,
+    hSize: number,
+    align: string
+    bg: string
+    change: boolean
+    opacity: number,
+    underlay: string
+}
+export default interface button {
+    children: React.ReactNode,
+    style: any
+    bc: string
+    bw: number
+    bg: string,
+    align: string,
+    br: number,
+    Pressing: any,
+
+
+}
+export default interface loadingButton {
+    children: React.ReactNode,
+    style: any
+    bc: string
+    bw: number
+    bg: string,
+    align: string,
+    br: number,
+    Pressing: any,
+    cl: string,
+    size: number
+}
+export default interface Icon_button {
+    children: React.ReactNode,
+    style: any
+    bc: string
+    bw: number
+    bg: string,
+    align: string,
+    br: number,
+    Pressing: any,
+    icon: any,
+    size: number
+}

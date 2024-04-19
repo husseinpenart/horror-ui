@@ -8,7 +8,7 @@ const Images = ({ uri,
     style,
     alignSelf,
     borderRadius,
-    resizeMode,
+   
 }: ImageViewProps) => {
     return (
         <View>
@@ -22,7 +22,6 @@ const Images = ({ uri,
                         height: !imgH ? 100 : imgH,
                         alignSelf: !alignSelf ? 'center' : alignSelf,
                         borderRadius: !borderRadius ? 5 : borderRadius,
-                        resizeMode: !resizeMode ? '' : resizeMode,
                         ...style ,
                     }
 
