@@ -25,6 +25,7 @@ const activeColors = {
     light: '#F5F5F5',
     dark: '#212121',
 
+
 }
 const Gradient = {
     primary: ['#726EFF', '#00E676'],

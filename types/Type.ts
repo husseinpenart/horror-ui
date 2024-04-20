@@ -100,3 +100,41 @@ export default interface Icon_button {
     icon: any,
     size: number
 }
+export default interface provider {
+    children: React.ReactNode,
+}
+export default interface layout {
+    children: React.ReactNode,
+    ws: number,
+    ht: number,
+    bd: number,
+    bg: string,
+    el: number,
+    sc: string,
+    sfw: number
+    sfh: number
+    style: any,
+    sho: number
+    sR: number
+}
+
+export default interface input {
+    style: any
+    fs: number
+    fF: string
+    fW: string | number
+    txp: string,
+    cl: string,
+    wsize: number | string
+    hsize: number | string
+    cap:any,
+    autoComplete:any,
+    holder:string
+    defaultVal:string
+    cColor:string,
+    read:boolean,
+    inputType:any
+    numLine:number,
+    hide:boolean
+
+}
