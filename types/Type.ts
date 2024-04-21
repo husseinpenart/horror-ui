@@ -136,5 +136,38 @@ export default interface input {
     inputType:any
     numLine:number,
     hide:boolean
+    bg:string
+    br:number
+    bWidth:number
+    bColor:string
+
+}
+export default interface LInput {
+    style: any
+    fs: number
+    fF: string
+    fW: string | number
+    txp: string,
+    cl: string,
+    wsize: number | string
+    hsize: number | string
+    cap:any,
+    autoComplete:any,
+    holder:string
+    defaultVal:string
+    cColor:string,
+    read:boolean,
+    inputType:any
+    numLine:number,
+    hide:boolean
+    bg:string
+    br:number
+    bWidth:number
+    bColor:string
+    label:string,
+    titleActiveSize : number,
+    titleInActiveSize : number,
+    titleActiveColor : string,
+    titleInactiveColor : string,
 
 }

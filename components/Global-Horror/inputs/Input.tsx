@@ -1,6 +1,7 @@
 import {View, Text, TextInput} from 'react-native';
 import React from 'react';
 import input from '../../../types/Type';
+import {Theme} from '../../../Styles/size/Theme';
 
 const Input = ({
   style,
@@ -20,6 +21,10 @@ const Input = ({
   inputType,
   numLine,
   hide,
+  bg,
+  br,
+  bWidth,
+  bColor,
 }: input) => {
   return (
     <TextInput
@@ -31,6 +36,10 @@ const Input = ({
         color: !cl ? 'black' : cl,
         width: !wsize ? 250 : wsize,
         height: !hsize ? 40 : hsize,
+        borderRadius: !br ? 5 : br,
+        backgroundColor: !bg ? Theme.activeColors.light : bg,
+        borderWidth:!bWidth ? 1 : bWidth,
+        borderColor:!bColor ? Theme.activeColors.info : bColor,
         ...style,
       }}
       autoComplete={!autoComplete ? 'off' : autoComplete}
