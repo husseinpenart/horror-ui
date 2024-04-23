@@ -1,7 +1,7 @@
 import {View, Text, TextInput} from 'react-native';
 import React from 'react';
-import input from '../../../types/Type';
-import {Theme} from '../../../Styles/size/Theme';
+import input from '../../../../types/Type';
+import {Theme} from '../../../../Styles/size/Theme';
 
 const Input = ({
   style,

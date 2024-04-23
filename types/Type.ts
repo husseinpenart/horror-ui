@@ -127,19 +127,19 @@ export default interface input {
     cl: string,
     wsize: number | string
     hsize: number | string
-    cap:any,
-    autoComplete:any,
-    holder:string
-    defaultVal:string
-    cColor:string,
-    read:boolean,
-    inputType:any
-    numLine:number,
-    hide:boolean
-    bg:string
-    br:number
-    bWidth:number
-    bColor:string
+    cap: any,
+    autoComplete: any,
+    holder: string
+    defaultVal: string
+    cColor: string,
+    read: boolean,
+    inputType: any
+    numLine: number,
+    hide: boolean
+    bg: string
+    br: number
+    bWidth: number
+    bColor: string
 
 }
 export default interface LInput {
@@ -151,23 +151,115 @@ export default interface LInput {
     cl: string,
     wsize: number | string
     hsize: number | string
-    cap:any,
-    autoComplete:any,
-    holder:string
-    defaultVal:string
-    cColor:string,
-    read:boolean,
-    inputType:any
-    numLine:number,
-    hide:boolean
-    bg:string
-    br:number
-    bWidth:number
-    bColor:string
-    label:string,
-    titleActiveSize : number,
-    titleInActiveSize : number,
-    titleActiveColor : string,
-    titleInactiveColor : string,
+    cap: any,
+    autoComplete: any,
+    holder: string
+    defaultVal: string
+    cColor: string,
+    read: boolean,
+    inputType: any
+    numLine: number,
+    hide: boolean
+    bg: string
+    br: number
+    bWidth: number
+    bColor: string
+    label: string,
+    titleActiveSize: number,
+    titleInActiveSize: number,
+    titleActiveColor: string,
+    titleInactiveColor: string,
 
+}
+
+export default interface spinner {
+    style: any
+    size: number
+    color: string
+    Animating: boolean
+    hidesWhenStopped: boolean
+}
+export default interface spinner {
+    style: any
+    size: number
+    color: string
+    Animating: boolean
+    hidesWhenStopped: boolean
+}
+export default interface avatarImage {
+    children: React.ReactNode,
+    uri: string,
+    imgS: number,
+    imgH: number,
+    style: any | {},
+    alignSelf: string,
+    borderRadius: number,
+}
+export default interface radio {
+    selected: any
+    title: string
+    onPress: any
+    style: any
+    radioSection: any
+    label: string,
+    onSelect: any
+    width: any
+    backgroundColor: string
+    alignSelf: string
+    marginBottom: number
+    flexDirection: string
+    alignItems: string
+    justifyContent: string
+    height: number
+    paddingHorizontal: number
+    borderRadius: number
+    elevation: number,
+    bColor: string,
+    bgColor: string
+    borderWidth: number
+    marginHorizontal: number
+    fontSize: number
+    textAlign: any
+    color: string
+    marginVertical: number,
+    paddingVertical: number
+    flex: number
+}
+export default interface modal {
+    modalVisible: boolean,
+    onRequestClose: any,
+    children: React.ReactNode,
+    style: any,
+    title: string,
+    titleOnclick: boolean,
+    noIcon: boolean,
+    extraStyle: boolean,
+    hasInfo: boolean,
+    noTitleStyle: boolean,
+    animationType: any
+    transparent: boolean
+    position: any,
+    top: number
+    right: number
+    zIndex: number
+    backgroundColor: string
+    modalBack: string
+    borderRadius: number
+    name: string
+    size: number
+    color: string
+    flex: number
+    justifyContent: string
+    alignItems: string
+    marginTop: number
+    height: number
+    margin: number
+    shadowColor: string
+    shWidth:number
+    shHeight:number
+    shadowOpacity:number
+    shadowRadius:number
+    elevation:number
+    modalStyle:any
+    backStyle:any
 }
