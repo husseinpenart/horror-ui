@@ -255,11 +255,52 @@ export default interface modal {
     height: number
     margin: number
     shadowColor: string
-    shWidth:number
-    shHeight:number
-    shadowOpacity:number
-    shadowRadius:number
-    elevation:number
-    modalStyle:any
-    backStyle:any
+    shWidth: number
+    shHeight: number
+    shadowOpacity: number
+    shadowRadius: number
+    elevation: number
+    modalStyle: any
+    backStyle: any
+}
+export default interface splash {
+    style: any
+    inverted: boolean
+    horizontal: boolean
+    disableVertical: boolean,
+    disableHorizontal: boolean
+    data: any
+    renderItem: any
+    numColumns: number
+    invertStickyHeaders: any
+    store: any
+}
+
+export default interface scroll {
+    children: React.ReactNode
+    style: any,
+    horizontal: boolean
+    fadeEdge: number
+    showsHorizontalScrollIndicator: boolean
+    showsVerticalScrollIndicator: boolean
+    contentContainerStyle: any
+    onScroll: any
+    endColor: string
+    pagingEnabled: boolean
+}
+
+export default interface toggle {
+    style: any
+    trackColor: any
+    thumbColor: string
+    onValueChange: any
+    value: any
+}
+
+export default interface toast{
+    message:string
+    title:string
+    short:any
+    long:any
+    gravity:any
 }
