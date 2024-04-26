@@ -26,7 +26,7 @@ export default interface TextViewProps {
 
 export default interface ImageViewProps {
     children: React.ReactNode,
-    uri: string,
+    uri: any,
     imgS: number,
     imgH: number,
     style: any | {},
@@ -188,7 +188,7 @@ export default interface spinner {
 }
 export default interface avatarImage {
     children: React.ReactNode,
-    uri: string,
+    uri: any,
     imgS: number,
     imgH: number,
     style: any | {},
@@ -274,6 +274,7 @@ export default interface splash {
     numColumns: number
     invertStickyHeaders: any
     store: any
+    keyExtractor:any
 }
 
 export default interface scroll {
@@ -303,4 +304,14 @@ export default interface toast{
     short:any
     long:any
     gravity:any
+}
+export default interface gallery{
+    objects: [] | {},
+    nativeEvent:any,
+    dot:boolean
+    line:string
+    cl:string
+    ws:number
+    hs:number
+    children:React.ReactNode
 }
