@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/husseinpenart/horror-ui.git"
+    "url": "git+https://github.com/husseinpenart/horror-ui"
   },
   "keywords": [
     "react-native",

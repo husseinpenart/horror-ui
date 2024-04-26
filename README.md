@@ -15,9 +15,7 @@ Install my-project with npm
     
 ## Demo
 
-demos and examples images
-
-
+demos and examples image on my portfolio site
 ## Documentation
 
 [Documentation](https://linktodocumentation)
