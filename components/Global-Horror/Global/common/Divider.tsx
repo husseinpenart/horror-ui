@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import divider from '../../../../types/Type';
+import {divider} from '../../../../types/Type';
 
 const Divider = ({
   style,

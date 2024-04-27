@@ -8,7 +8,7 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import {memo} from 'react';
-import radio from '../../../../types/Type';
+import {radio} from '../../../../types/Type';
 
 /**
  * Radio component for selecting one option from a group.

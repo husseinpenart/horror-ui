@@ -1,6 +1,6 @@
 import {View, Modal, Pressable} from 'react-native';
 import React from 'react';
-import modal from '../../../../types/Type';
+import {modal} from '../../../../types/Type';
 // @ts-ignore
 import Icon from 'react-native-vector-icons/AntDesign';
 const Window = ({

@@ -1,6 +1,6 @@
 import {View, Text, ActivityIndicator} from 'react-native';
 import React from 'react';
-import spinner from '../../../../types/Type';
+import {spinner} from '../../../../types/Type';
 
 const Spinner = ({
   style,

@@ -1,7 +1,7 @@
 
 import React, {useState, useRef} from 'react';
 import {Animated, Easing, TextInput, StyleSheet} from 'react-native';
-import LInput from '../../../../types/Type';
+import {LInput} from '../../../../types/Type';
 import { Theme } from '../../../../Styles/size/Theme';
 
 const LabelInput = ({

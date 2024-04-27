@@ -1,6 +1,6 @@
 import { View, Text, TouchableHighlight } from 'react-native'
 import React from 'react'
-import Icon_button from '../../../../types/Type';
+import { Icon_button } from '../../../../types/Type'
 
 const IconButton = ({
     children,
@@ -14,6 +14,8 @@ const IconButton = ({
     Pressing,
     icon,
     size,
+    pd,
+    mr
   }: Icon_button) => {
   return (
     <TouchableHighlight
@@ -24,6 +26,8 @@ const IconButton = ({
           backgroundColor: !bg ? '#A55AFA' : bg,
           alignSelf: !align ? 'center' : align,
           borderRadius: !br ? 5 : br,
+          padding: !pd ? 10 :pd,
+          margin: !mr ? 10 : mr,
           ...style,
         },
         {

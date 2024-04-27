@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import Layout from '../components/Global-Horror/Global/Views/Layout'
 import BlogCard from './Components/BlogCard'
@@ -18,7 +17,7 @@ import ToastMessage from './Components/ToastMessage'
 
 const AllPack = () => {
   return (
-    <Scroll disableVertical={false} style={{marginBottom:100}}>
+    <Scroll showsHorizontalScrollIndicator={false} style={{marginBottom:100}}>
       <Heading txp='center'>Scroll and Components</Heading>
       <BlogCard />
       <SmallCard />

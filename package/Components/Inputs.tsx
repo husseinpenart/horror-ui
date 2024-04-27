@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import Layout from '../../components/Global-Horror/Global/Views/Layout'
 import LabelInput from '../../components/Global-Horror/Global/inputs/FloatInput'

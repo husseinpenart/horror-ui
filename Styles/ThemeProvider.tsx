@@ -1,7 +1,6 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { Theme } from './size/Theme';
-import provider from '../types/Type';
+import {provider} from '../types/Type';
 export const ThemeContext = React.createContext('light');
 
 const ThemeProvider = ({children}:provider) => {

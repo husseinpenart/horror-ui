@@ -1,6 +1,6 @@
 import {View, Text, FlatList} from 'react-native';
 import React from 'react';
-import splash from '../../../../types/Type';
+import {splash} from '../../../../types/Type';
 
 const Gallery = ({
   style,

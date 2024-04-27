@@ -1,6 +1,6 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
-import avatarImage from '../../../../types/Type';
+import {avatarImage} from '../../../../types/Type';
 
 const ImageAvatar = ({
   uri,

@@ -1,6 +1,6 @@
 import {View, Text, FlatList} from 'react-native';
 import React, { memo } from 'react';
-import splash from '../../../../types/Type';
+import {splash} from '../../../../types/Type';
 
 const FlashScreen = ({
   style,
@@ -25,6 +25,8 @@ const FlashScreen = ({
     showsHorizontalScrollIndicator={disableHorizontal}
     showsVerticalScrollIndicator={disableVertical}
     contentContainerStyle={{...style}}
+
+    
     
     
     

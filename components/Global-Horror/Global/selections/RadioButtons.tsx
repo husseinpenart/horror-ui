@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import radio from '../../../../types/Type';
+import {radio} from '../../../../types/Type';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
 const RadioButton = ({
@@ -54,38 +54,38 @@ const RadioButton = ({
   </TouchableOpacity>
 );
 
+export default RadioButton
 
+// const RadioButtons:unknown = ({
+// 	flex,
+// 	label
+// }:radio) => {
+//   const [selectedValue, setSelectedValue] = useState(null);
 
-const RadioButtons:unknown = ({
-	flex,
-	label
-}:radio) => {
-  const [selectedValue, setSelectedValue] = useState(null);
+//   return (
+//     <View style={{
+// 		flex: !flex  ? 1 : flex,
+// 		justifyContent: 'center',
+// 		alignItems: 'center',
+// 		backgroundColor: '#F5F5F5',
+// 	}}>
+//       <RadioButton
+//         label={!label ? "ReactJS" : label}
+//         selected={selectedValue === 'option1'}
+//         onSelect={() => setSelectedValue('option1')}
+//       />
+//       <RadioButton
+//         label={!label ? "ReactJS" : label}
+//         selected={selectedValue === 'option2'}
+//         onSelect={() => setSelectedValue('option2')}
+//       />
+//       <RadioButton
+//         label={!label ? "ReactJS" : label}
+//         selected={selectedValue === 'option3'}
+//         onSelect={() => setSelectedValue('option3')}
+//       />
+//     </View>
+//   );
+// };
 
-  return (
-    <View style={{
-		flex: !flex  ? 1 : flex,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#F5F5F5',
-	}}>
-      <RadioButton
-        label={!label ? "ReactJS" : label}
-        selected={selectedValue === 'option1'}
-        onSelect={() => setSelectedValue('option1')}
-      />
-      <RadioButton
-        label={!label ? "ReactJS" : label}
-        selected={selectedValue === 'option2'}
-        onSelect={() => setSelectedValue('option2')}
-      />
-      <RadioButton
-        label={!label ? "ReactJS" : label}
-        selected={selectedValue === 'option3'}
-        onSelect={() => setSelectedValue('option3')}
-      />
-    </View>
-  );
-};
-
-export default RadioButtons;
+// export default RadioButtons;

@@ -1,6 +1,6 @@
 import {View, Text, ScrollView} from 'react-native';
 import React from 'react';
-import scroll from '../../../../types/Type';
+import {scroll} from '../../../../types/Type';
 
 const Scroll = ({
   children,

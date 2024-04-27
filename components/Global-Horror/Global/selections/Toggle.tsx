@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, Switch, StyleSheet} from 'react-native';
-import toggle from '../../../../types/Type';
+import {toggle} from '../../../../types/Type';
 
 const Toggle = ({
     style,
@@ -13,7 +13,6 @@ value,
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
   return (
-    <View style={styles.container}>
       <Switch
         trackColor={trackColor}
         thumbColor={thumbColor}
@@ -21,16 +20,12 @@ value,
         value={isEnabled}
         style={{...style}}
       />
-    </View>
+  
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+
 });
 
 export default Toggle;

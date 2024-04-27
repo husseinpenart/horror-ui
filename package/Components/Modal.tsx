@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React, { useState } from 'react'
 import TextView from '../../components/Global-Horror/Global/Text/TextView'
 import Button from '../../components/Global-Horror/Global/buttons/Button'

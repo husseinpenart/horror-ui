@@ -1,6 +1,6 @@
 import { View, Text, Image, useWindowDimensions } from 'react-native'
 import React, { memo } from 'react'
-import ImageViewProps from '../../../../types/Type';
+import {ImageViewProps} from '../../../../types/Type';
 
 const Images = ({ uri,
     imgS,

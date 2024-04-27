@@ -1,6 +1,6 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React, {Children, memo} from 'react';
-import CardViewProps from '../../../../types/Type';
+import {CardViewProps} from '../../../../types/Type';
 
 const CardView = ({
   children,
@@ -31,6 +31,7 @@ const CardView = ({
         shadowOpacity: !sho ? 1 : sho,
         shadowRadius: !sR ? 0 : sR,
         elevation: !el ? 1 : el,
+      
         ...style,
       }}>
       {children}
@@ -38,4 +39,4 @@ const CardView = ({
   );
 };
 
-export default memo(CardView);
+export default (CardView);

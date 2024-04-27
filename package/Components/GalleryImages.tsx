@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import Gallery from '../../components/Global-Horror/Global/Gallery/Gallery'
 import Images from '../../components/Global-Horror/Global/Images/Images'

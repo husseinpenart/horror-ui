@@ -1,12 +1,11 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import HeadingProps from '../../../../types/Type';
+import {HeadingProps} from '../../../../types/Type';
 
 const Heading = ({children, style, fs, fF, fW, txp, cl}: HeadingProps) => {
   return (
-    <View>
-      <Text>
-        {
+ 
+        
           <Text
             style={{
               fontSize: !fs ? 20 : fs,
@@ -19,9 +18,8 @@ const Heading = ({children, style, fs, fF, fW, txp, cl}: HeadingProps) => {
             }}>
             {children}
           </Text>
-        }
-      </Text>
-    </View>
+        
+  
   );
 };
 

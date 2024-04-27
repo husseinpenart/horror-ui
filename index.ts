@@ -21,7 +21,7 @@ import Toggle from './components/Global-Horror/Global/selections/Toggle';
 import Heading from './components/Global-Horror/Global/Text/Heading';
 import TextView from './components/Global-Horror/Global/Text/TextView';
 import Layout from './components/Global-Horror/Global/Views/Layout';
-
+import Gallery from './components/Global-Horror/Global/Gallery/Gallery';
 export {
   CardView,
   Toast,
@@ -46,4 +46,5 @@ export {
   Heading,
   TextView,
   Layout,
+  Gallery
 };
