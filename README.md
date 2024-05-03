@@ -36,6 +36,21 @@ hi everyone this is base ui component and section to defined pre complete ui str
 ## Usage/Examples
 
 ```javascript
+//APP.TSX config
+import React, {memo} from 'react';
+import { Theme } from './Styles/size/Theme';
+const ThemeProvider = require('./Styles/ThemeProvider').default;
+const App = () => {
+  return (
+    <ThemeProvider Theme={Theme}>
+     <AllPack />
+    </ThemeProvider>
+  );
+};
+export default memo(App);
+```
+```javascript
+//BLOG CARD
 import React from 'react'
 import CardView from '../../components/Global-Horror/Global/Views/CardView'
 import { Theme } from '../../Styles/size/Theme';
@@ -62,6 +77,67 @@ const BlogCard = () => {
 }
 
 export default BlogCard
+```
+
+```javascript
+//ACCORDION BOX
+import {View, Text} from 'react-native';
+import React from 'react';
+import Accordion from '../../components/Global-Horror/Global/accordion-collapse/Accordion';
+import Heading from '../../components/Global-Horror/Global/Text/Heading';
+import Layout from '../../components/Global-Horror/Global/Views/Layout';
+import TextView from '../../components/Global-Horror/Global/Text/TextView';
+import ImageAvatar from '../../components/Global-Horror/Global/avatars/ImageAvatar';
+import {Theme} from '../../Styles/size/Theme';
+import CardView from '../../components/Global-Horror/Global/Views/CardView';
+const data = [
+  {
+    title: 'accordion1',
+    name: 'Hussein ',
+    lastName: 'Asadi',
+    job: 'just nothing',
+    jobImage:
+      'https://media.licdn.com/dms/image/C4D08AQF7dT4Xu9Mdlw/croft-frontend-shrinkToFit1024/0/1598293904802?e=2147483647&v=beta&t=DNhQO0ro-yffBiu1QvhnBtt5IxzPpFPw19yUZXvE6ZA',
+  },
+  {
+    title: 'accordion2',
+    name: 'John ',
+    lastName: 'Den',
+    job: 'just working',
+    jobImage:
+      'https://assets-global.website-files.com/6509fe179d7033a278a05268/652771a2ad43d990a8837c07_Blog-feature-HR-Pillar.png',
+  },
+  {
+    title: 'accordion3',
+    name: 'Sara ',
+    lastName: 'Alarez',
+    job: 'just makeup',
+    jobImage:
+      'https://blog-imgs-169.fc2.com/g/i/a/giadinhdoisongvn/makeup-artist.jpg',
+  },
+];
+const AccordionBox = () => {
+  return (
+    <CardView style={{alignSelf:'center', alignItems:'center', padding: 20,margin:10}}>
+      {data.map((e, i) => (
+        <Accordion title={e.title}>
+          <Layout bg={Theme.activeColors.light} ws={200} ht={150} bd={20}>
+            <ImageAvatar uri={e.jobImage} style={{top: 10}} />
+            <Heading txp="center" style={{top: 10}}>
+              {e.name + ' ' + e.lastName}
+            </Heading>
+            <TextView txp="center" style={{top: 10}}>
+              {e.job}
+            </TextView>
+          </Layout>
+        </Accordion>
+      ))}
+    </CardView>
+  );
+};
+
+export default AccordionBox;
+
 ```
 
 
@@ -93,6 +169,7 @@ export default BlogCard
 | `Spinner` | `loading` | Loading  components .  |
 | `FloatInput` | `textinput` |animation float input .  |
 | `Input` | `textinput` | simple input .  |
+| `accordion` | `Accordion box ` | accordion element with animation  |
 | `FlashScreen` | `flatlist` | flashscreen to scroll like a flatlist but with more speed .  |
 | `Scroll` | `scrollView` | as scroll View with more speed and flexability.  |
 | `window` | `Modal` | widnow use as modal .  |
@@ -118,6 +195,23 @@ export default BlogCard
 | `percentSizes`| `size percent` | **optional**.sm,md,lg,xl,xxl,full |
 
 
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| primary Color | ![#726EFF](https://via.placeholder.com/10/726EFF?text=+) #726EFF |
+| secondary Color | ![#E6E6E6](https://via.placeholder.com/10/00E676?text=+) #00E676 |
+| success Color | ![#00E676](https://via.placeholder.com/10/00E676?text=+)#00E676 |
+| danger Color | ![#FF5252](https://via.placeholder.com/10/FF5252?text=+) #FF5252 |
+| warning Color | ![#FFC107](https://via.placeholder.com/10/FFC107?text=+) #FFC107 |
+| info Color | ![#2196F3](https://via.placeholder.com/10/2196F3?text=+) #2196F3 |
+| light Color | ![#F5F5F5](https://via.placeholder.com/10/F5F5F5?text=+) #F5F5F5 |
+| lightBlue Color | ![#8CCEFF](https://via.placeholder.com/10/8CCEFF?text=+) #8CCEFF |
+| orange Color | ![#FF812B](https://via.placeholder.com/10/FF812B?text=+) #FF812B |
+| pink Color | ![#FF2BC5](https://via.placeholder.com/10/FF2BC5?text=+) #FF2BC5 |
+| darkGreen Color | ![#003901](https://via.placeholder.com/10/003901?text=+) #003901 |
+| yellow Color | ![#FFE033](https://via.placeholder.com/10/FFE033?text=+) #FFE033 |
 
 
 ## Authors

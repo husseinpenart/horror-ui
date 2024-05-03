@@ -1,3 +1,4 @@
+import {View, Text} from 'react-native';
 import React from 'react';
 import Layout from '../../components/Global-Horror/Global/Views/Layout';
 import Button from '../../components/Global-Horror/Global/buttons/Button';
@@ -6,7 +7,7 @@ import RoundedButton from '../../components/Global-Horror/Global/buttons/Rounded
 import LoadingButton from '../../components/Global-Horror/Global/buttons/LoadingButton';
 import {Theme} from '../../Styles/size/Theme';
 import IconButton from '../../components/Global-Horror/Global/buttons/IconButton';
-// @ts-ignore
+//@ts-ignore
 import Icon from 'react-native-vector-icons/AntDesign';
 import Heading from '../../components/Global-Horror/Global/Text/Heading';
 

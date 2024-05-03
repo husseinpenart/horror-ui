@@ -43,7 +43,7 @@ const SmallCard = () => {
       horizontal
       disableHorizontal={false}
       renderItem={(item: any) => (
-        <CardView el={4} sc="black" ws={100} hs="auto" style={{margin:10}}>
+        <CardView el={4} sc="black" ws={100} ht="auto" style={{margin:10}}>
           <Images uri={item.image}  imgS={80} imgH={80} style={{margin:10,}} />
           <TextView txp='center' fs={14}>{item.name}</TextView>
           <TextView txp='center' fs={12}>{item.price}</TextView>

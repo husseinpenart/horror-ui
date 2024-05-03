@@ -1,3 +1,4 @@
+import {View, Text} from 'react-native';
 import React, {useState} from 'react';
 import Layout from '../../components/Global-Horror/Global/Views/Layout';
 import CheckBox from '../../components/Global-Horror/Global/selections/CheckBox';

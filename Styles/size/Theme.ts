@@ -24,6 +24,11 @@ const activeColors = {
     info: '#2196F3',
     light: '#F5F5F5',
     dark: '#212121',
+    lightBlue:'#8CCEFF',
+    orange:'#FF812B',
+    pink:'#FF2BC5',
+    darkGreen:'#003901',
+    yellow:'#FFE033'
 
 
 }

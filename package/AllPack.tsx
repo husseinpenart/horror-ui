@@ -1,3 +1,4 @@
+import { View, Text } from 'react-native'
 import React from 'react'
 import Layout from '../components/Global-Horror/Global/Views/Layout'
 import BlogCard from './Components/BlogCard'
@@ -14,6 +15,7 @@ import ImageAvatar from '../components/Global-Horror/Global/avatars/ImageAvatar'
 import Gallery from './Components/GalleryImages'
 import GalleryImages from './Components/GalleryImages'
 import ToastMessage from './Components/ToastMessage'
+import AccordionBox from './Components/AccordionBox'
 
 const AllPack = () => {
   return (
@@ -28,6 +30,8 @@ const AllPack = () => {
       <Modal />
       <Divider wSize={300} hSize={1} bg='green'/>
       <Selection />
+      <Divider wSize={300} hSize={1} bg='green'/>
+      <AccordionBox />
       <Inputs />
       <Heading txp='center'>  Avatar</Heading>
 
