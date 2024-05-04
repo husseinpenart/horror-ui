@@ -7,8 +7,6 @@ import RoundedButton from '../../components/Global-Horror/Global/buttons/Rounded
 import LoadingButton from '../../components/Global-Horror/Global/buttons/LoadingButton';
 import {Theme} from '../../Styles/size/Theme';
 import IconButton from '../../components/Global-Horror/Global/buttons/IconButton';
-//@ts-ignore
-import Icon from 'react-native-vector-icons/AntDesign';
 import Heading from '../../components/Global-Horror/Global/Text/Heading';
 
 const Buttons = () => {
@@ -24,7 +22,7 @@ const Buttons = () => {
       <LoadingButton>
         <TextView cl={Theme.activeColors.light}> loading </TextView>
       </LoadingButton>
-      <IconButton><TextView cl={Theme.activeColors.light}>user <Icon name="user" size={20}/></TextView></IconButton>
+      <IconButton><TextView cl={Theme.activeColors.light}>user (your icon)</TextView></IconButton>
     </Layout>
   );
 };

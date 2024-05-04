@@ -30,8 +30,7 @@
   "homepage": "https://github.com/husseinpenart/horror-ui#readme",
   "peerDependencies": {
     "react": "18.2.0",
-    "react-native": "0.73.6",
-    "react-native-vector-icons": "^10.0.3"
+    "react-native": "0.73.6"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.77.0",

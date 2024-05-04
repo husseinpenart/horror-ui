@@ -1,22 +1,23 @@
 import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 // @ts-ignore
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const CheckBox = (props: any) => {
+const CheckBox = ({Pressing, icons,title}: any) => {
   // const iconName = props.isChecked ?
   // 	"checkbox-marked" : "checkbox-blank-outline";
 
   return (
     <View style={styles.container}>
-      <Pressable onPress={props.onPress}>
-        <MaterialCommunityIcons
+      <Pressable onPress={Pressing}>
+        {/* <MaterialCommunityIcons
           name={props.isChecked ? 'checkbox-marked' : 'checkbox-blank-outline'}
           size={props.size}
           color={props.color}
         />
+         */}
+      {Pressing ? icons : icons}
       </Pressable>
-      <Text style={styles.title}>{props.title}</Text>
+      <Text style={styles.title}>{title}</Text>
     </View>
   );
 };

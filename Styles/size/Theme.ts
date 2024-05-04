@@ -1,3 +1,4 @@
+import { theme } from "../../types/Type"
 
 const sizes = {
     sm: 10,
@@ -43,7 +44,7 @@ const Gradient = {
     dark: ['#212121', '#212121'],
 }
 
-export const Theme = {
+export const Theme: theme = {
     sizes,
     percentSizes,
     activeColors,

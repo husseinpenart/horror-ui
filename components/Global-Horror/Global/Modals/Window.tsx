@@ -2,7 +2,6 @@ import {View, Modal, Pressable} from 'react-native';
 import React from 'react';
 import {modal} from '../../../../types/Type';
 // @ts-ignore
-import Icon from 'react-native-vector-icons/AntDesign';
 const Window = ({
   modalVisible,
   onRequestClose,
@@ -40,7 +39,8 @@ const Window = ({
   width,
   modalBack,
   modalStyle,
-  backStyle
+  backStyle,
+  icons
 }: modal) => {
   return (
     <Modal
@@ -104,11 +104,7 @@ const Window = ({
               ...style,
             }}
             onPress={onRequestClose}>
-            <Icon
-              name={!name ? 'closecircleo' : name}
-              size={!size ? 20 : size}
-              color={!color ? 'white' : color}
-            />
+           {icons}
           </Pressable>
           {children}
         </View>

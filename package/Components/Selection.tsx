@@ -34,8 +34,7 @@ const Selection = () => {
         onPress={() => setMusic(!music)}
         title="Music"
         isChecked={music}
-        size={25}
-        color="red"
+        icons={<Text>icon</Text>}
       />
       <CheckBox
         onPress={() => setDancing(!dancing)}

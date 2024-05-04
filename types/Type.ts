@@ -1,9 +1,11 @@
 import React from "react";
+import { DimensionValue, NativeMethods, TextComponent } from "react-native";
+import { Constructor } from "react-native/types/private/Utilities";
 
 export interface CardViewProps {
     children?: React.ReactNode,
     ws?: number,
-    ht?: number | undefined
+    ht?: DimensionValue | undefined
     bd?: number,
     bg?: string,
     el?: number,
@@ -54,9 +56,9 @@ export interface BorderButton {
     align?: string,
     br?: number,
     Pressing?: any
-    pd?: number | unknown
-    mr?: number | unknown
-    underlay?:string
+    pd?: DimensionValue | unknown
+    mr?: DimensionValue | unknown
+    underlay?: string
 
 
 }
@@ -79,9 +81,9 @@ export interface button {
     align?: string,
     br?: number,
     Pressing?: any,
-    underlay?:string
-    pd?:number
-    mr?:number
+    underlay?: string
+    pd?: number
+    mr?: number
 
 
 }
@@ -96,9 +98,9 @@ export interface loadingButton {
     Pressing?: any,
     cl?: string,
     size?: number
-    pd?: number | unknown
-    mr?: number | unknown
-    underlay?:string
+    pd?: DimensionValue | unknown
+    mr?: DimensionValue | unknown
+    underlay?: string
 
 }
 export interface Icon_button {
@@ -112,17 +114,17 @@ export interface Icon_button {
     Pressing?: any,
     icon?: any,
     size?: number
-    pd?: number | unknown
-    mr?: number | unknown
-    underlay?:string
+    pd?: DimensionValue | unknown
+    mr?: DimensionValue | unknown
+    underlay?: string
 }
 export interface provider {
     children?: React.ReactNode,
 }
 export interface layout {
     children?: React.ReactNode,
-    ws?: number | number | string,
-    ht?: number | number,
+    ws?: DimensionValue | number | string,
+    ht?: DimensionValue | number,
     bd?: number,
     bg?: string,
     el?: number,
@@ -142,7 +144,7 @@ export interface input {
     txp?: string,
     cl?: string,
     wsize?: number | string
-    hsize?: number | undefined
+    hsize?: DimensionValue | undefined
     cap?: any,
     autoComplete?: any,
     holder?: string
@@ -156,7 +158,7 @@ export interface input {
     br?: number
     bWidth?: number
     bColor?: string
-    defaultVal?:string | undefined
+    defaultVal?: string | undefined
 
 }
 export interface LInput {
@@ -167,7 +169,7 @@ export interface LInput {
     txp?: string,
     cl?: string,
     wsize?: number | string
-    hsize?: number | undefined
+    hsize?: DimensionValue | undefined
     cap?: any,
     autoComplete?: any,
     holder?: string
@@ -186,7 +188,7 @@ export interface LInput {
     titleInActiveSize?: number,
     titleActiveColor?: string,
     titleInactiveColor?: string,
-    defaultVal?:string
+    defaultVal?: string
 
 }
 
@@ -209,11 +211,11 @@ export interface avatarImage {
 }
 export interface radio {
     selected?: any
-    title?:string |{}
+    title?: React.ReactNode
     onPress?: any
     style?: any
     radioSection?: any
-    label?: string | {},
+    label?: React.ReactNode,
     onSelect?: any
     width?: any
     backgroundColor?: string
@@ -275,7 +277,8 @@ export interface modal {
     elevation?: number
     modalStyle?: any
     backStyle?: any
-    width?: number | undefined;
+    width?: DimensionValue | undefined;
+    icons?:any
 }
 export interface splash {
     style?: any
@@ -328,6 +331,25 @@ export interface gallery {
     line?: string
     cl?: string
     ws?: number
-    hs?: number | undefined
+    hs?: DimensionValue | undefined
     children?: React.ReactNode
+}
+
+export interface AccordionType {
+    children?: React.ReactNode,
+    title?: string,
+    style?: object,
+    headerTextStyle?: object,
+    status?: number,
+    avatar?: ImageViewProps | object | [{}],
+    contacts?: string,
+    contentStyle?: object,
+    onEdit?(): void,
+    avatarOnclick?(): void,
+}
+export interface theme{
+    sizes?:any,
+    percentSizes?:any,
+    activeColors?:any,
+    Gradient?:any
 }
