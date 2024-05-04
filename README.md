@@ -38,11 +38,10 @@ hi everyone this is base ui component and section to defined pre complete ui str
 ```javascript
 //APP.TSX config
 import React, {memo} from 'react';
-import { Theme } from './Styles/size/Theme';
 const ThemeProvider = require('./Styles/ThemeProvider').default;
 const App = () => {
   return (
-    <ThemeProvider Theme={Theme}>
+    <ThemeProvider value={theme}>
      <AllPack />
     </ThemeProvider>
   );

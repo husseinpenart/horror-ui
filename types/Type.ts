@@ -1,6 +1,5 @@
 import React from "react";
 import { DimensionValue, NativeMethods, TextComponent } from "react-native";
-import { Constructor } from "react-native/types/private/Utilities";
 
 export interface CardViewProps {
     children?: React.ReactNode,
@@ -120,6 +119,7 @@ export interface Icon_button {
 }
 export interface provider {
     children?: React.ReactNode,
+    value?: any
 }
 export interface layout {
     children?: React.ReactNode,
