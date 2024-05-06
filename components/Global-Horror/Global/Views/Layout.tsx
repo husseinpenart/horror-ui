@@ -22,7 +22,7 @@ const Layout = ({
         backgroundColor: !bg ? 'transparent' : bg,
         width:ws,
         height: !ht ? 'auto' : ht,
-        borderRadius: !bd ? 5 : bd,
+        borderRadius: !bd ? 0 : bd,
         shadowColor: !sc ? '#000' : sc,
         shadowOffset: {
           width: !sfw ? 0 : sfw,

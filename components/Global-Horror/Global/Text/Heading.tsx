@@ -10,7 +10,7 @@ const Heading = ({children, style, fs, fF, fW, txp, cl}: HeadingProps) => {
             style={{
               fontSize: !fs ? 20 : fs,
               fontFamily: !fF ? 'sans-serif' : fF,
-              fontWeight: !fW ? 'bold' : fW,
+              fontWeight: !fW ? null : fW,
               textAlign: !txp ? 'justify' : txp,
               color: !cl ? 'black' : cl,
 

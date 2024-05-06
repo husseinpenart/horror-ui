@@ -1,5 +1,6 @@
 import React from "react";
 import { DimensionValue, NativeMethods, TextComponent } from "react-native";
+import { Constructor } from "react-native/types/private/Utilities";
 
 export interface CardViewProps {
     children?: React.ReactNode,
@@ -35,6 +36,9 @@ export interface ImageViewProps {
     style?: any | {},
     alignSelf?: string,
     borderRadius?: number,
+    mode?:object | any
+    require?:object | any
+    blur?:number
 }
 export interface HeadingProps {
     children?: React.ReactNode,
@@ -119,7 +123,6 @@ export interface Icon_button {
 }
 export interface provider {
     children?: React.ReactNode,
-    value?: any
 }
 export interface layout {
     children?: React.ReactNode,
@@ -208,6 +211,8 @@ export interface avatarImage {
     style?: any | {},
     alignSelf?: string,
     borderRadius?: number,
+    mode?:object | any
+    require?:object | any
 }
 export interface radio {
     selected?: any

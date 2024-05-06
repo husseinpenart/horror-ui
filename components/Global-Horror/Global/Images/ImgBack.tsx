@@ -1,8 +1,14 @@
-import {View, Text, Image, useWindowDimensions} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  useWindowDimensions,
+  ImageBackground,
+} from 'react-native';
 import React, {memo} from 'react';
 import {ImageViewProps} from '../../../../types/Type';
 
-const Images = ({
+const ImgBack = ({
   uri,
   imgS,
   imgH,
@@ -15,7 +21,7 @@ const Images = ({
 }: ImageViewProps) => {
   return (
     <View>
-      <Image
+      <ImageBackground
         source={!uri ? require : {uri: uri}}
         resizeMode={!mode ? null : mode}
         blurRadius={!blur ? 0 : blur}
@@ -33,4 +39,4 @@ const Images = ({
   );
 };
 
-export default memo(Images);
+export default memo(ImgBack);

@@ -9,10 +9,13 @@ const ImageAvatar = ({
   style,
   alignSelf,
   borderRadius,
+  mode,
+  require
 }: avatarImage) => {
   return (
     <Image
-      source={{uri: uri}}
+    source={!uri ? require : {uri:uri}}
+      resizeMode={!mode ? null : mode}
       style={[
         {
           width: !imgS ? 80 : imgS,

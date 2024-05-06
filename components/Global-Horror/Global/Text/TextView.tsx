@@ -17,9 +17,9 @@ const TextView = ({
       style={{
         fontSize: !fs ? 12 : fs,
         fontFamily: !fF ? 'sans-serif' : fF,
-        fontWeight: !fW ? 'normal' : fW,
+        fontWeight: !fW ? null : fW,
         textAlign: !txp ? 'justify' : txp,
-        color: !cl ? 'black' : cl,
+        color: !cl ? '#000' : cl,
         ...style,
       }}
       numberOfLines={!numLine ? 0 : numLine}>
