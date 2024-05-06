@@ -1,6 +1,6 @@
 {
   "name": "react-native-horror",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "hi everyone this is base ui component and section to defined pre complete ui structure and and ui components for you you can use this package for your application in react-native ",
   "main": "index.ts",
   "scripts": {

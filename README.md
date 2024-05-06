@@ -50,15 +50,6 @@ export default memo(App);
 ```
 ```javascript
 //BLOG CARD
-import React from 'react'
-import CardView from '../../components/Global-Horror/Global/Views/CardView'
-import { Theme } from '../../Styles/size/Theme';
-import Images from '../../components/Global-Horror/Global/Images/Images'
-import Heading from '../../components/Global-Horror/Global/Text/Heading'
-import TextView from '../../components/Global-Horror/Global/Text/TextView'
-import RoundedButton from '../../components/Global-Horror/Global/buttons/RoundedButton';
-import Layout from '../../components/Global-Horror/Global/Views/Layout';
-
 const BlogCard = () => {
   return (
   <Layout>
@@ -80,15 +71,7 @@ export default BlogCard
 
 ```javascript
 //ACCORDION BOX
-import {View, Text} from 'react-native';
-import React from 'react';
-import Accordion from '../../components/Global-Horror/Global/accordion-collapse/Accordion';
-import Heading from '../../components/Global-Horror/Global/Text/Heading';
-import Layout from '../../components/Global-Horror/Global/Views/Layout';
-import TextView from '../../components/Global-Horror/Global/Text/TextView';
-import ImageAvatar from '../../components/Global-Horror/Global/avatars/ImageAvatar';
-import {Theme} from '../../Styles/size/Theme';
-import CardView from '../../components/Global-Horror/Global/Views/CardView';
+
 const data = [
   {
     title: 'accordion1',
@@ -138,7 +121,320 @@ const AccordionBox = () => {
 export default AccordionBox;
 
 ```
+```javascript
+//BUTTONS
+const Buttons = () => {
+  return (
+    <Layout ws={'100%'} style={{flexDirection: 'row' , flexWrap:'wrap'}}>
+      <Heading txp='center'>Buttons </Heading>
+      <Button>
+        <TextView cl={Theme.activeColors.light}>simple Button</TextView>
+      </Button>
+      <RoundedButton>
+        <TextView>Rounded button</TextView>
+      </RoundedButton>
+      <LoadingButton>
+        <TextView cl={Theme.activeColors.light}> loading </TextView>
+      </LoadingButton>
+      <IconButton><TextView cl={Theme.activeColors.light}>user (your icon)</TextView></IconButton>
+    </Layout>
+  );
+};
 
+export default Buttons;
+
+```
+```javascript
+//IMAGE GALLERY
+const GalleryImages = () => {
+  const objects =  [ {
+        images:
+          'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+      },
+      {
+        images:
+          'https://y4v9k2m9.rocketcdn.me/pictures/google-on-stock-photography-authenticity.jpg',
+      },
+      {
+        images:
+          'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+      },
+      {
+        images:
+          'https://y4v9k2m9.rocketcdn.me/pictures/google-on-stock-photography-authenticity.jpg',
+      },
+      {
+        images:
+          'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+      },
+      {
+        images:
+          'https://y4v9k2m9.rocketcdn.me/pictures/google-on-stock-photography-authenticity.jpg',
+      },
+      {
+        images:
+          'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+      },]
+  return (
+    <Layout >
+      <Heading>image gallery</Heading>
+        <Gallery 
+        data={objects}
+        renderItem={(item:any)=>(
+          <Images 
+          uri={item.images}
+          imgH={100}
+          imgS={100}
+          style={{margin:5}}
+          />
+        )}
+        />
+      
+    </Layout>
+  )
+}
+
+export default GalleryImages
+
+```
+```javascript
+//INPUTS
+const Inputs = () => {
+  return (
+    <Layout>
+      <LabelInput
+        label="this is label"
+        wsize={200}
+        bg={Theme.activeColors.info}
+      />
+      <Input holder="simple form" />
+    </Layout>
+  );
+};
+
+export default Inputs;
+
+```
+```javascript
+//LOADINGS
+const Loadings = () => {
+  return (
+   <>
+        <Heading txp='center'>Loading spinners</Heading>
+    <Layout style={{flexDirection:'row' , flexWrap:'wrap' }}>
+     <Spinner size={Theme.sizes.full} color={Theme.activeColors.danger}/>
+     <Spinner size={Theme.sizes.xxl} color={Theme.activeColors.dark}/>
+     <Spinner size={Theme.sizes.xl} color={Theme.activeColors.info}/>
+     <Spinner size={Theme.sizes.lg} color={Theme.activeColors.primary}/>
+     <Spinner size={Theme.sizes.md} color={Theme.activeColors.secondary}/>
+     <Spinner size={Theme.sizes.sm} color={Theme.activeColors.danger}/>
+    </Layout>
+    </>
+  )
+}
+
+export default Loadings
+
+```
+```javascript
+//MODAL
+const Modal = () => {
+    const [openModal ,  setOpenModal] = useState(false)
+  return (
+    <>
+     <Button Pressing={()=>setOpenModal(true)}><TextView cl='white'>open modal</TextView></Button>
+     <Window modalVisible={openModal} onRequestClose={()=>setOpenModal(false)}
+     backStyle={'red'}
+     animationType={'slide'}
+     backgroundColor='green'
+     modalBack={Theme.activeColors.secondary}
+     >
+        <Heading txp='center'>Hi! I'm Here </Heading>
+        <Images uri={'https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg'} imgS={200} imgH={200}/>
+
+     </Window>
+    </>
+  )
+}
+
+export default Modal
+
+```
+```javascript
+//SELECTIONS
+
+
+const Selection = () => {
+  const [music, setMusic] = useState(false);
+  const [dancing, setDancing] = useState(false);
+  const [reading, setReading] = useState(false);
+  const [pricing , setPricing] = useState(0)
+
+  const price = [
+    {
+      name: 100,
+      id: 1,
+    },
+    {
+      name: 200,
+      id: 2,
+    },
+    {
+      name: 300,
+      id: 3,
+    },
+  ];
+  return (
+    <>
+    <Layout style={{flexDirection: 'row' ,flexWrap:'wrap'}}>
+      <CheckBox
+        onPress={() => setMusic(!music)}
+        title="Music"
+        isChecked={music}
+        icons={<Text>icon</Text>}
+      />
+      <CheckBox
+        onPress={() => setDancing(!dancing)}
+        title="Dancing"
+        isChecked={dancing}
+        size={25}
+        color="red"
+      />
+      <CheckBox
+        onPress={() => setReading(!reading)}
+        title="Reading"
+        isChecked={reading}
+        size={25}
+        color="red"
+      />
+      {price.map((e, i) => (
+        <Radio
+        key={i}
+        title={e.name}
+        onPress={() => setPricing(e.id)}
+        selected={e.id === pricing}
+        />
+      ))}
+   
+    </Layout>
+      {price.map((e, i) => (
+        <RadioButton
+        label={e.name}
+        key={i}
+        selected={pricing === e.id}
+        onSelect={() => setPricing(e.id)}
+        />
+      ))}
+      <Toggle 
+      trackColor={{false:'red', true:'green'}}
+      thumbColor='red'
+      value={'huuu'}
+      
+      />
+    </>
+  );
+};
+
+export default Selection;
+
+
+```
+```javascript
+//PRODUCT CARD
+
+
+const SmallCard = () => {
+  const product = [
+    {
+      name: 'T-shirt',
+      price: 100,
+      image:
+        'https://a.cdn-hotels.com/gdcs/production157/d1079/b215ff33-0c46-4f08-8d34-cd992d722e9d.jpg?impolicy=fcrop&w=800&h=533&q=medium',
+    },
+    {
+      name: 'jeans',
+      price: 50,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Souk_in_Tunisia_1.jpg/640px-Souk_in_Tunisia_1.jpg',
+    },
+    {
+      name: 'shoes',
+      price: 200,
+      image:
+        'https://a.cdn-hotels.com/gdcs/production157/d1079/b215ff33-0c46-4f08-8d34-cd992d722e9d.jpg?impolicy=fcrop&w=800&h=533&q=medium',
+    },
+    {
+      name: 'Boot',
+      price: 300,
+      image:
+        'https://www.cuddlynest.com/blog/wp-content/uploads/2022/08/shopping-in-san-francisco-scaled.jpg',
+    },
+  ];
+  return (
+    <Layout>
+    <Heading txp='center'>Flash Screen and Small Cards</Heading>
+    <FlashScreen
+      data={product}
+      horizontal
+      disableHorizontal={false}
+      renderItem={(item: any) => (
+        <CardView el={4} sc="black" ws={100} ht="auto" style={{margin:10}}>
+          <Images uri={item.image}  imgS={80} imgH={80} style={{margin:10,}} />
+          <TextView txp='center' fs={14}>{item.name}</TextView>
+          <TextView txp='center' fs={12}>{item.price}</TextView>
+        </CardView>
+      )}
+    />
+    </Layout>
+  );
+};
+
+export default SmallCard;
+```
+```javascript
+//TOAST MESSAGE
+
+
+const ToastMessage = () => {
+  return (
+    <View>
+      <Toast
+        long
+        message="hi this is toast"
+        style={{backgroundColor: 'red', width: 200, height: 50}}>
+        <TextView>message</TextView>
+      </Toast>
+    </View>
+  );
+};
+
+export default ToastMessage;
+```
+```javascript
+//TOAST MESSAGE
+const ToastMessage = () => {
+  return (
+    <View>
+      <Toast
+        long
+        message="hi this is toast"
+        style={{backgroundColor: 'red', width: 200, height: 50}}>
+        <TextView>message</TextView>
+      </Toast>
+    </View>
+  );
+};
+
+export default ToastMessage;
+```
+```javascript
+//BACKGROUND IMAGE
+<ImgBack
+        require={require('./pepsi-messi-poster.png')}// OR uri={uriimg}
+        imgH={300}
+        imgS={300}
+      />
+```
 
 ## Tech Stack
 
@@ -175,7 +471,8 @@ export default AccordionBox;
 | `checkbox` | `checkbox` | using this require a icon of checked .  |
 | `radio` | `radio` | customize radio but with choosing value.  |
 | `RadioButton` | `Radio Button` | customized radio button .  |
-| `Heading` | `Text` | for titles and headers .  |
+| `Heading` | `imageBackground` | for background images and element inside.  |
+| `ImgBack` | `Text` | for titles and headers .  |
 | `TextView` | `Text` | as a text .  |
 | `Theme` | `cusomize theme usage` | customized sizes by percentage and dp active colors gradient colors .  |
 #### and more components
@@ -187,6 +484,7 @@ export default AccordionBox;
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `style`| `styles` | **optional**. all styles are optional |
+| `blur`| `styles` | **optional**.blur view for images |
 | `theme`| `ThemeProvider` | **optional**. sizes, percentSizes, activeColors, Gradient |
 | `Gradient`| `array of colors` | **optional**. primarysecondarysuccess,danger,warning,info,light,dark |
 | `colors`| `colors` | **optional**. primarysecondarysuccess,danger,warning,info,light,dark |
