@@ -50,7 +50,7 @@ const BlogCard = () => {
         require={require('./pepsi-messi-poster.png')}
         imgH={300}
         imgS={300}
-      />
+      ><TextView>Hellooooo</TextView></ImgBack>
     </Layout>
   );
 };

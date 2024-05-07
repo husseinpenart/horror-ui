@@ -430,10 +430,10 @@ export default ToastMessage;
 ```javascript
 //BACKGROUND IMAGE
 <ImgBack
-        require={require('./pepsi-messi-poster.png')}// OR uri={uriimg}
+        require={require('./pepsi-messi-poster.png')}
         imgH={300}
         imgS={300}
-      />
+      ><TextView>Hellooooo</TextView></ImgBack>
 ```
 
 ## Tech Stack

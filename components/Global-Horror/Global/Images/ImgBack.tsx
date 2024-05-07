@@ -18,6 +18,7 @@ const ImgBack = ({
   mode,
   require,
   blur,
+  children
 }: ImageViewProps) => {
   return (
     <View>
@@ -34,7 +35,7 @@ const ImgBack = ({
             ...style,
           },
         ]}
-      />
+      >{children}</ImageBackground>
     </View>
   );
 };
