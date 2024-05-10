@@ -100,21 +100,37 @@ const data = [
 ];
 const AccordionBox = () => {
   return (
-    <CardView style={{alignSelf:'center', alignItems:'center', padding: 20,margin:10}}>
-      {data.map((e, i) => (
-        <Accordion title={e.title}>
-          <Layout bg={Theme.activeColors.light} ws={200} ht={150} bd={20}>
-            <ImageAvatar uri={e.jobImage} style={{top: 10}} />
-            <Heading txp="center" style={{top: 10}}>
-              {e.name + ' ' + e.lastName}
-            </Heading>
-            <TextView txp="center" style={{top: 10}}>
-              {e.job}
-            </TextView>
-          </Layout>
-        </Accordion>
-      ))}
-    </CardView>
+       <Layout>
+      <FlashScreen
+        data={images}
+        disableVertical
+        style={{marginBottom: '15%'}}
+        renderItem={item => (
+          <View style={styles.container}>
+            <Accordion
+              title={item.title}
+              style={styles.accordTitle}
+              cl="white"
+              icon={<Icon name="down" size={20} style={styles.icon} />}>
+              <View style={styles.accordionButton}>
+                <Images uri={item.image} style={styles.BackImg} />
+                <View style={styles.viewInfo}>
+                  <TextView style={styles.infoText}>{item.title}</TextView>
+                  <TextView style={styles.infoText}>
+                    {item.score}
+                  </TextView>
+                  <TextView style={styles.infoText}> {item.year}</TextView>
+                  <TextView style={styles.infoText}>
+                  {item.style}
+                  </TextView>
+                </View>
+              </View>
+             
+            </Accordion>
+          </View>
+        )}
+      />
+    </Layout>
   );
 };
 

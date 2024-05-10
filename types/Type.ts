@@ -351,6 +351,8 @@ export interface AccordionType {
     contentStyle?: object,
     onEdit?(): void,
     avatarOnclick?(): void,
+    cl?: string ;
+    icon:any
 }
 export interface theme{
     sizes?:any,

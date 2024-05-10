@@ -22,7 +22,9 @@ import Heading from './components/Global-Horror/Global/Text/Heading';
 import TextView from './components/Global-Horror/Global/Text/TextView';
 import Layout from './components/Global-Horror/Global/Views/Layout';
 import Gallery from './components/Global-Horror/Global/Gallery/Gallery';
-import ImgBack from './components/Global-Horror/Global/Images/ImgBack'
+import ImgBack from './components/Global-Horror/Global/Images/ImgBack';
+import Accordion from './components/Global-Horror/Global/accordion-collapse/Accordion';
+
 export {
   CardView,
   Toast,
@@ -48,5 +50,7 @@ export {
   TextView,
   Layout,
   Gallery,
-  ImgBack
+  ImgBack,
+  Accordion
+
 };
