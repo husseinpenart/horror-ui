@@ -1,13 +1,13 @@
-import {View, Text, Alert} from 'react-native';
-import React from 'react';
-import CardView from '../../components/Global-Horror/Global/Views/CardView';
-import {Theme} from '../../Styles/size/Theme';
-import Images from '../../components/Global-Horror/Global/Images/Images';
-import Heading from '../../components/Global-Horror/Global/Text/Heading';
-import TextView from '../../components/Global-Horror/Global/Text/TextView';
-import RoundedButton from '../../components/Global-Horror/Global/buttons/RoundedButton';
-import Layout from '../../components/Global-Horror/Global/Views/Layout';
-import ImgBack from '../../components/Global-Horror/Global/Images/ImgBack';
+import { View, Text, Alert } from "react-native";
+import React from "react";
+import CardView from "../../components/Global-Horror/Global/Views/CardView";
+import { Theme } from "../../Styles/size/Theme";
+import Images from "../../components/Global-Horror/Global/Images/Images";
+import Heading from "../../components/Global-Horror/Global/Text/Heading";
+import TextView from "../../components/Global-Horror/Global/Text/TextView";
+import RoundedButton from "../../components/Global-Horror/Global/buttons/RoundedButton";
+import Layout from "../../components/Global-Horror/Global/Views/Layout";
+import ImgBack from "../../components/Global-Horror/Global/Images/ImgBack";
 
 const BlogCard = () => {
   return (
@@ -20,12 +20,15 @@ const BlogCard = () => {
         el={10}
         sR={5}
         sc="red"
-        style={{margin: 10, alignSelf: 'center'}}>
+        style={{ margin: 10, alignSelf: "center" }}
+      >
         <Images
-          require={require('./pepsi-messi-poster.png')}
+          uri={
+            "https://husseinpenart.github.io/horror-ui-doc/assets/images/first-5cbe12ae3f6ba8d5998d163feb8eb4a0.webp"
+          }
           imgS={150}
           imgH={100}
-          style={{margin: 10}}
+          style={{ margin: 10 }}
         />
         <Heading txp="center" cl={Theme.activeColors.success}>
           beauty of nature
@@ -33,7 +36,8 @@ const BlogCard = () => {
         <TextView
           numLine={1}
           cl={Theme.activeColors.primary}
-          style={{padding: 10}}>
+          style={{ padding: 10 }}
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur
           officiis consequatur necessitatibus veritatis natus sit adipisci nisi
           enim quos!
@@ -42,15 +46,20 @@ const BlogCard = () => {
           align="center"
           bw={0.2}
           bc={Theme.activeColors.info}
-          Pressing={() => Alert.alert('hellooo')}>
+          Pressing={() => Alert.alert("hellooo")}
+        >
           <TextView>more...</TextView>
         </RoundedButton>
       </CardView>
       <ImgBack
-        require={require('./pepsi-messi-poster.png')}
+        uri={
+          "https://husseinpenart.github.io/horror-ui-doc/assets/images/first-5cbe12ae3f6ba8d5998d163feb8eb4a0.webp"
+        }
         imgH={300}
         imgS={300}
-      ><TextView>Hellooooo</TextView></ImgBack>
+      >
+        <TextView>Hellooooo</TextView>
+      </ImgBack>
     </Layout>
   );
 };

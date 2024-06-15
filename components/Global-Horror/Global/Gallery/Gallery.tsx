@@ -20,7 +20,7 @@ const Gallery = ({
       data={data}
       horizontal={horizontal}
       numColumns={!numColumns ? 2 : numColumns}
-      renderItem={({item, index}) => renderItem(item, index)}
+      renderItem={({item, index}:{item:any , index:any}) => renderItem(item, index)}
       invertStickyHeaders={invertStickyHeaders}
       inverted={inverted}
       showsHorizontalScrollIndicator={disableHorizontal}

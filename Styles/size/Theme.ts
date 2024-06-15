@@ -2,18 +2,18 @@ import { theme } from "../../types/Type"
 
 const sizes = {
     sm: 10,
-    md: 20,
-    lg: 30,
-    xl: 40,
-    xxl: 50,
-    full: 100
+    md: 50,
+    lg: 100,
+    xl: 200,
+    xxl: 300,
+    full: 400
 }
 const percentSizes = {
     sm: '10%',
     md: '20%',
     lg: '30%',
-    xl: '40%',
-    xxl: '50%',
+    xl: '50%',
+    xxl: '80%',
     full: '100%'
 }
 const activeColors = {

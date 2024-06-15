@@ -28,9 +28,6 @@ const LabelInput = ({
     numLine,
     hide,
     bg,
-    br,
-    bWidth,
-    bColor,
   }:LInput
 ) => {
     const [text, onChangeText] = React.useState('');

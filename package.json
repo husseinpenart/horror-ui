@@ -1,6 +1,6 @@
 {
   "name": "react-native-horror",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "hi everyone this is base ui component and section to defined pre complete ui structure and and ui components for you you can use this package for your application in react-native ",
   "main": "index.ts",
   "scripts": {
@@ -20,14 +20,17 @@
     "ui",
     "android",
     "ios",
-    "Hussein Asadi"
+    "Hussein Asadi",
+    "react native component ui",
+    "react native ui library",
+    "react native fast library"
   ],
   "author": "Hussein Asadi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/husseinpenart/horror-ui/issues"
   },
-  "homepage": "https://github.com/husseinpenart/horror-ui#readme",
+  "homepage": "https://husseinpenart.github.io/horror-ui-doc/",
   "peerDependencies": {
     "react": "18.2.0",
     "react-native": "0.73.6"
@@ -39,9 +42,7 @@
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "jest": "^29.6.3"
-
   },
-
   "engines": {
     "node": ">=18"
   }
