@@ -1,8 +1,8 @@
-import {View, Text, StyleSheet} from 'react-native';
-import React, {Children, memo} from 'react';
-import {CardViewProps} from '../../../../types';
+import {View} from 'react-native';
+import React from 'react';
+import {layout} from '../../../../types';
 
-const CardView = ({
+const Box = ({
   children,
   bg,
   ws,
@@ -15,12 +15,12 @@ const CardView = ({
   style,
   sho,
   sR,
-}: CardViewProps) => {
+}: layout) => {
   return (
     <View
       style={{
-        backgroundColor: !bg ? '#fff' : bg,
-        width: !ws ? 200 : ws,
+        backgroundColor: !bg ? 'transparent' : bg,
+        width: ws,
         height: !ht ? 'auto' : ht,
         borderRadius: !bd ? 0 : bd,
         shadowColor: !sc ? '#000' : sc,
@@ -30,8 +30,7 @@ const CardView = ({
         },
         shadowOpacity: !sho ? 1 : sho,
         shadowRadius: !sR ? 0 : sR,
-        elevation: !el ? 1 : el,
-
+        elevation: !el ? 0 : el,
         ...style,
       }}>
       {children}
@@ -39,4 +38,4 @@ const CardView = ({
   );
 };
 
-export default CardView;
+export default Box;

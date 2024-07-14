@@ -24,6 +24,9 @@ import Layout from './components/Global-Horror/Global/Views/Layout';
 import Gallery from './components/Global-Horror/Global/Gallery/Gallery';
 import ImgBack from './components/Global-Horror/Global/Images/ImgBack';
 import Accordion from './components/Global-Horror/Global/accordion-collapse/Accordion';
+import Box from './components/Global-Horror/Global/Views/Box';
+import { removeTags, truncate } from './components/Global-Horror/Global/tools/tools';
+import BottomSheet from './components/Global-Horror/Global/bottomSheet/BottomSheet';
 
 export {
   CardView,
@@ -51,6 +54,10 @@ export {
   Layout,
   Gallery,
   ImgBack,
-  Accordion
+  Accordion,
+  Box,
+  removeTags,
+  truncate,
+  BottomSheet
 
 };

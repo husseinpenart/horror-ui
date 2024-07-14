@@ -36,9 +36,9 @@ export interface ImageViewProps {
     style?: any | {},
     alignSelf?: string,
     borderRadius?: number,
-    mode?:object | any
-    require?:object | any
-    blur?:number
+    mode?: object | any
+    require?: object | any
+    blur?: number
 }
 export interface HeadingProps {
     children?: React.ReactNode,
@@ -211,8 +211,8 @@ export interface avatarImage {
     style?: any | {},
     alignSelf?: string,
     borderRadius?: number,
-    mode?:object | any
-    require?:object | any
+    mode?: object | any
+    require?: object | any
 }
 export interface radio {
     selected?: any
@@ -283,7 +283,7 @@ export interface modal {
     modalStyle?: any
     backStyle?: any
     width?: DimensionValue | undefined;
-    icons?:any
+    icons?: any
 }
 export interface splash {
     style?: any
@@ -351,12 +351,18 @@ export interface AccordionType {
     contentStyle?: object,
     onEdit?(): void,
     avatarOnclick?(): void,
-    cl?: string ;
-    icon:any
 }
-export interface theme{
-    sizes?:any,
-    percentSizes?:any,
-    activeColors?:any,
-    Gradient?:any
+export interface theme {
+    sizes?: any,
+    percentSizes?: any,
+    activeColors?: any,
+    Gradient?: any
+}
+export interface buttomSheetType {
+    children?: React.ReactNode,
+    button?(): void,
+    divider?: any,
+    backgroundColor?: string,
+    borderRadius?: string | number,
+    style?: StyleProp
 }

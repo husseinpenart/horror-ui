@@ -1,6 +1,6 @@
 import {View, Text, SafeAreaView} from 'react-native';
 import React from 'react';
-import {layout} from '../../../../types/Type';
+import {layout} from '../../../../types';
 
 const Layout = ({
   children,
@@ -20,7 +20,7 @@ const Layout = ({
     <SafeAreaView
       style={{
         backgroundColor: !bg ? 'transparent' : bg,
-        width:ws,
+        width: ws,
         height: !ht ? 'auto' : ht,
         borderRadius: !bd ? 0 : bd,
         shadowColor: !sc ? '#000' : sc,
@@ -32,7 +32,6 @@ const Layout = ({
         shadowRadius: !sR ? 0 : sR,
         elevation: !el ? 0 : el,
         ...style,
-
       }}>
       {children}
     </SafeAreaView>
