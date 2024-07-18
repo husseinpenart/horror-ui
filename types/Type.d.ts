@@ -366,3 +366,28 @@ export interface buttomSheetType {
     borderRadius?: string | number,
     style?: StyleProp
 }
+export interface paginationType {
+    totalPages?: number,
+    currentPage?: number,
+    onPageChange: (page: number) => void;
+    borderColor?: string,
+    paginationColor?: string,
+    currentPageButtonColor?: any,
+    pageTextStyle?: StyleProp<ViewStyle>,
+    pageRangeDisplayed?: number
+    onNextPage?: (page: number) => void;
+    onPrevPage?: (page: number) => void;
+    prevStyle?: StyleProp<ViewStyle>,
+    nextStyle?: StyleProp<ViewStyle>,
+    PrevTextStyle?: StyleProp<ViewStyle>,
+    NextTextStyle?: StyleProp<ViewStyle>,
+    prevText?: string,
+    nextText?: string
+}
+export interface DrawerType {
+    isOpen?: boolean,
+    onClose?(): void,
+    children?: React.ReactNode,
+    backgroundColor?: string
+    style?: StyleProp<ViewStyle>
+}
