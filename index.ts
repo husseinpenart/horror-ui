@@ -27,6 +27,10 @@ import Accordion from './components/Global-Horror/Global/accordion-collapse/Acco
 import Box from './components/Global-Horror/Global/Views/Box';
 import { removeTags, truncate } from './components/Global-Horror/Global/tools/tools';
 import BottomSheet from './components/Global-Horror/Global/bottomSheet/BottomSheet';
+import Paginating from './components/Global-Horror/Global/paginations/Paginating';
+import ButtonPagination from './components/Global-Horror/Global/paginations/ButtonPagination';
+import EllipsePagination from './components/Global-Horror/Global/paginations/ElipsPagination';
+import Drawer from './components/Global-Horror/Global/Drawer/Drawer';
 
 export {
   CardView,
@@ -58,6 +62,10 @@ export {
   Box,
   removeTags,
   truncate,
-  BottomSheet
+  BottomSheet,
+  Paginating,
+  EllipsePagination,
+  ButtonPagination,
+  Drawer
 
 };
